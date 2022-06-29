@@ -16,7 +16,7 @@ class AuthController extends Controller
 {
     //
     public function __construct(){
-        // $this->middleware('throttle:5,5')->only('login');
+        $this->middleware('throttle:5,5')->only('login');
     }
 
     public function register(Request $request){
